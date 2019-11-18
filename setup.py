@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="F1-Fuzzer", # Replace with your own username
-    version="0.0.2",
+    version="0.0.3",
     author="Rahul Gopinath",
     author_email="rahul@gopinath.org",
     description="A fast grammar fuzzer",
