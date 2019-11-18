@@ -1,2 +1,2 @@
-from fuzzer import CTrans
-from fuzzer import CFWriteCTFuzzer
+from .fuzzer import CTrans
+from .fuzzer import CFWriteCTFuzzer
