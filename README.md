@@ -16,3 +16,12 @@ valuable for us.  Thanks!
 - stackp's array size is INT\_MAX/100 in Linux (INT\_MAX in MacOS)
 - out\_region\_initp's arraysize is UINT\_MAX/100 (UINT\_MAX in MacOS)
 - all contents of ".section  __DATA,__data" is moved to ".text" section in vm\_ops.s
+
+
+### llvm IR code from grammars - ###
+
+To execute any of the handwritten IR files (`basic_handwritten_gram.ll` or `slightly_complex_handwritten_gram.ll`), just run `make` inside the F1 directory. This generates two executables - `basic` and `complex` respectively.
+
+
+To generate an IR file corresponding to any grammar, please run `python3 main.py <grammarfile>`.
+The next steps are printed on the terminal.
