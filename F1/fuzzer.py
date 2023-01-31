@@ -125,7 +125,9 @@ class LimitFuzzer(LimitFuzzer):
 # A non recursive version.
 class LimitFuzzer_NR(LimitFuzzer):
     def is_nt(self, name):
-        return (name[0], name[-1]) == ('<', '>')
+        if len(name) > 1:
+            return (name[0], name[-1]) == ('<', '>')
+        return False
  
     def tree_to_str(self, tree):
         name, children = tree
